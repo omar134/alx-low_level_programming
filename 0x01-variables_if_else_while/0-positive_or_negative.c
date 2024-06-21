@@ -1,8 +1,10 @@
 #include <stdlib.h>
-#include <stdio.h> 
+#include <stdio.h>
 #include <time.h>
-/* more headers goes there 
- fucntion to determine if a random number is greater than, equals, less than zero */
+
+
+/* fucntion to determine if a random number is greater than,
+ * equals, less than zero */
 int main(void)
 {
 	int n;
