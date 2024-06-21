@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h> // Include the standard I/O library
 #include <time.h>
 /* more headers goes there */
 
