@@ -3,8 +3,7 @@
 #include <time.h>
 
 
-/* fucntion to determine if a random number is greater than,
- * equals, less than zero */
+/* fucntion to determine if a random number is >, <, = zero */
 int main(void)
 {
 	int n;
