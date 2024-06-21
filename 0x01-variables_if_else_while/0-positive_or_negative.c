@@ -3,7 +3,8 @@
 #include <time.h>
 
 /**
- * main - Determines if a random number is greater than, less than, or equal to zero
+ * main - Determines if a random number is
+ * greater than, less than, or equal to zero
  *
  * Return: Always 0 (success)
  */
