@@ -1,16 +1,16 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
- * main - prints the alphabet in small
+ * main - prints the alphabet
  * Return: 0
  */
 int main(void)
 {
-	char alphabet[30] = "abcdefghijklmnopqrstuvwxyz";
+	char ch;
 
-	for (int i = 0; i <= strlen(alphabet); i++)
-		putchar(alphabet[i]);
-	putchar("\n")
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+
+	putchar('\n');
 	return (0);
 }
