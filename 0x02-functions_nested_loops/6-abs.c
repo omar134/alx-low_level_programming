@@ -4,13 +4,12 @@
  * _abs - prints the absoulute value
  * @n: number being tested
  *
- * Return: -
+ * Return: abs n
  */
 int _abs(int n)
 {
 	if (n < 0)
-		_putchar((n * (-1)));
-	else
-		_putchar(n);
+		n = (-1) * n
+	return (n);
 }
 
