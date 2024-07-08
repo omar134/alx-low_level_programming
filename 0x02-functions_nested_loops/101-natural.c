@@ -1,4 +1,4 @@
-[200~#include <stdio.h>
+#include <stdio.h>
 
 /**
  *  * unitSum - sum of multiples of a
