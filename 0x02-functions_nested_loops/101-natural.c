@@ -1,34 +1,42 @@
 #include <stdio.h>
 
 /**
- *  * unitSum - sum of multiples of a
- *   * number less than or equal to N
- *    * @n: number calculated
- *     *
- *      * Return: the sum
- *       */
+ * unitSum - sum of multiples of a
+ * number less than or equal to N
+ * @n: number calculated
+ *
+ * Return: the sum
+ */
 unsigned int unitSum(unsigned int n)
 {
-		return ((n * (n + 1)) / 2);
+	return ((n * (n + 1)) / 2);
 }
 
 /**
- *  * main - sum of multiples of 3 or 5
- *   *
- *    * Return: 0
- *     */
+ * main - sum of multiples of 3 or 5
+ *
+ * Return: 0
+ */
 int main(void)
 {
-		unsigned int limit = 1024;
-			unsigned int sum;
+	unsigned int limit = 1024;
+	unsigned int sum = 0;
 
-				sum = 3 * unitSum((limit - 1) / 3);
+	for (unsigned int i = 3; i < limit; i += 3)
+	{
+		sum += i;
+	}
 
-					sum += 5 * unitSum((limit - 1) / 5);
+	for (unsigned int i = 5; i < limit; i += 5)
+	{
+		sum += i;
+	}
 
-						sum -= 15 * unitSum((limit - 1) / 15);
-
-							printf("%u\n", sum);
-								return (0);
+	for (unsigned int i = 15; i < limit; i += 15)
+	{
+		sum -= i;
+	}
+	printf("%u\n", sum);
+	return (0);
 }
 
